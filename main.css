@@ -5,55 +5,137 @@
 }
 
 body {
-  padding-bottom: 10px;
-  font-family: sans-serif;
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
+  top: 0;
   width: 100%;
+  z-index: 10;
+  color: #fff;
+  position: fixed;
+  max-height: 100px;
+  background: #161616;
+}
+
+.header > div {
+  margin: auto;
   display: flex;
-  flex-direction: column;  
+  padding: 20px 0;
+  max-width: 1360px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header > h1 {
-  margin: 0 auto;
-  font-size: 2.1rem;
-  padding: 30px 0 10px;
-}
-
-nav > ul {
-  gap: 10px;
+nav ul {
+  gap: 20px;
   display: flex;
-  list-style: none;
-  margin: 20px auto 20px;
-  justify-content: center;
+  list-style: none; 
 }
 
-nav > ul > li > a {
+nav ul li a {
+  color: #fff;
   text-decoration: none;
+  transition: color .25s ease-in;
+}
+
+nav ul li a:hover {
+  color: #FFD740;
 }
 
 section {
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 1280px;
+  color: #fff;
+  padding: 40px 0;
 }
 
-section > h2 {
-  margin: 20px 0;
+section#tech {
+  background-color: #0277BD;
+}
+
+section#sports {
+  background-color: #7CB342;
+}
+
+section#economy {
+  background-color: #6A1B9A;
+}
+
+section#entertainment {
+  color: #000;
+  background-color: #FFD740;
+}
+
+.container {
+  gap: 30px;
+  display: grid;
+  margin: 0 auto;
+  max-width: 1360px;
+  grid-template-areas:
+    'title title title'
+    'content content content';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+section h2 {
+  font-size: 2rem;
+  grid-area: title;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 260px;
 }
 
 article {
   gap: 10px;
+  display: grid;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all .25s ease-in;
+  grid-template-rows: 1fr auto;
+}
+
+article header {
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  line-height: 2;
+  padding: 0 15px;
+  font-size: 11px;
+  position: absolute;
+  border-radius: 1rem;
+  background-color: rgba(0,0,0,0.7);
+}
+
+article:hover {
+  transform: scale(1.01);
+}
+
+.content {
+  gap: 15px;
+  color: #000;
   display: flex;
   flex-direction: column;
+  padding: 10px 20px 20px;
 }
 
-article > img {
-  height: auto;
-  max-width: 100%;
+.content h3 {
+  margin: 0;
 }
 
-article + article {
-  margin-top: 40px;
+.float-button {
+  z-index: 5;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+}
+
+.float-button img {
+  width: 44px;
+  height: 44px;
 }
