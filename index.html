@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EBAC: Exercício</title>
+  <title>EBAC: Exercício HTML / JavaScript</title>
 </head>
 <body>
   <section>
     <h1>Formulário de cadastro</h1>
 
-    <form>
-      <div>
-        <label for="nome">Nome</label>
-        <input id="nome" type="text" />
-      </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input id="email" type="email" />
-      </div>
-      <div>
-        <label for="senha">Senha</label>
-        <input id="senha" type="password" />
-      </div>
-      <button type="submit">Cadastrar</button>
+    <form action="#" method="post" onsubmit="return validarFormulario();">
+      <label for="campo1">Campo 1:</label>
+      <input type="number" id="campo1" name="campo1" required>
+      <br>
+      
+      <label for="campo2">Campo 2:</label>
+      <input type="number" id="campo2" name="campo2" required>
+      <br>
+  
+      <input type="submit" value="Enviar">
     </form>
   </section>
+
+  <script src="./main.js"></script>
 </body>
 </html>
