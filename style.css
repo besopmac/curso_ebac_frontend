@@ -1,0 +1,8 @@
+/* Adiciona um estilo inicial para o texto tachado */
+#listaTarefas li {
+  cursor: pointer;
+}
+
+#listaTarefas li.completed {
+  text-decoration: line-through;
+}

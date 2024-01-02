@@ -3,27 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EBAC: Exercício</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>EBAC: Exercício Conheça o jQuery</title>
 </head>
 <body>
-  <section>
-    <h1>Formulário de cadastro</h1>
+  <h2>Lista de Tarefas</h2>
 
-    <form>
-      <div>
-        <label for="nome">Nome</label>
-        <input id="nome" type="text" />
-      </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input id="email" type="email" />
-      </div>
-      <div>
-        <label for="senha">Senha</label>
-        <input id="senha" type="password" />
-      </div>
-      <button type="submit">Cadastrar</button>
-    </form>
-  </section>
+  <form>
+    <label for="nomeTarefa">Nome da Tarefa:</label>
+    <input type="text" id="nomeTarefa" required>
+    <button type="button" id="btnCadastrar">Cadastrar Tarefa</button>
+  </form>
+
+  <ol id="listaTarefas"></ol>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
