@@ -1,0 +1,16 @@
+{
+  "name": "curso_ebac_frontend",
+  "version": "1.0.0",
+  "description": "\"Engenheiro Front-end: Especialista em desenvolvimento web, responsável por criar interfaces intuitivas, responsivas e visualmente atraentes, utilizando tecnologias e frameworks modernos para aprimorar a experiência do usuário no lado do cliente.\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/styles.scss:build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}
